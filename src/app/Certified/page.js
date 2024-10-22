@@ -5,7 +5,7 @@ function Certified() {
     <div className="xl:px-[10%] sm:px-[7%] px-[5%] pb-20 pt-10 sm:pt-10 lg:pt-24 xl:h-[100vh] sm:block lg:flex justify-between">
       <aside className="lg:w-[50%] sm:w-[80%]">
         <div className="flex">
-          <article className="bg-red-700 w-8 h-8 sm:w-11 lg:w-14 sm:h-10 lg:h-14 rounded-full p-1 sm:p-2 lg:p-3">
+          <article className="bg-red-700 w-10 h-10 sm:w-11 lg:w-14 sm:h-10 lg:h-14 rounded-full p-2 sm:p-2 lg:p-3">
             <LiaCertificateSolid className="text-slate-100 text-[1.6rem] sm:text-3xl lg:text-4xl" />
           </article>
           <p className="xl:text-xl lg:text-lg text-xl mt-1 sm:mt-4 ml-3 font-bold">

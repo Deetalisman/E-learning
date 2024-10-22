@@ -76,9 +76,9 @@ function Menubar({ setnavbar, navbar }) {
 
 function Mainhome() {
   return (
-    <div className="flex mt-[15vh] sm:mt-[30vh] lg:mt-5 justify-between">
+    <div className="flex mt-[10vh] sm:mt-[20vh] lg:mt-5 justify-between">
       <div className="mr-[2rem] sm:mr-[20%] lg:mr-0 ml-[2.2rem]">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-7">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[3rem]">
           Best Online Platform for education.
         </h1>
         <p className="mt-7 mb-0 text-[0.9rem] text-slate-300">
@@ -87,10 +87,10 @@ function Mainhome() {
           exercitationem
         </p>
         <div className="mt-0">
-          <button className="bg-[rgb(20,83,45)] text-[0.9rem] mt-[3rem] h-10 lg:h-12 px-12 rounded-md">
+          <button className="bg-[rgb(20,83,45)] text-[0.9rem] mt-[3rem] h-10 lg:h-12 sm:px-12 px-8 rounded-md">
             Signup Now
           </button>
-          <button className="bg-[rgb(161,98,7)] text-[0.9rem] ml-5 mt-[3rem]  h-10 lg:h-12 px-12 rounded-md">
+          <button className="bg-[rgb(161,98,7)] text-[0.9rem] ml-5 mt-[3rem]  h-10 lg:h-12 sm:px-12 px-8 rounded-md">
             Learn More
           </button>
         </div>
