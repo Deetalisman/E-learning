@@ -8,12 +8,12 @@ import Image from "next/image";
 import { FaHeart } from "react-icons/fa6";
 function Article() {
   return (
-    <div className="xl:px-[10%] sm:px-[7%] pt-16 pb-20 bg-[rgb(229,231,235)]">
+    <div className="xl:px-[10%] px-[10%] pt-16 pb-20 bg-[rgb(229,231,235)]">
       <p className="xl:text-5xl lg:text-4xl sm:text-3xl font-bold">
         Latest Article
       </p>
       <aside className="sm:mt-10 lg:mt-20 flex flex-wrap justify-between">
-        <div className="bg-white w-[45%] rounded-md">
+        <div className="bg-white sm:w-[45%] lg:w-[30%] rounded-md">
           <Image src={b1} className="w-full rounded-t-md" />
           <article className="py-5 px-4">
             <div className="flex justify-between">
@@ -37,7 +37,7 @@ function Article() {
             </p>
           </article>
         </div>
-        <div className="bg-white w-[45%] rounded-md">
+        <div className="bg-white sm:w-[45%] lg:w-[30%] rounded-md ">
           <Image src={b2} className="w-full rounded-t-md" />
           <article className="py-5 px-4">
             <div className="flex justify-between">
@@ -61,7 +61,7 @@ function Article() {
             </p>
           </article>
         </div>
-        <div className="bg-white w-[45%] sm:mt-5 lg:mt-0 rounded-md">
+        <div className="bg-white sm:w-[45%] lg:w-[30%] rounded-md lg:mt-0 sm:mt-10">
           <Image src={b3} className="w-full rounded-t-md" />
           <article className="py-5 px-4">
             <div className="flex justify-between">

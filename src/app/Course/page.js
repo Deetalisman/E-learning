@@ -13,7 +13,7 @@ function Course() {
     <div className="xl:px-[10%] lg:px-[9%] sm:px-[10%] xl:pt-16 sm:pt-10 pb-24 bg-[rgb(229,231,235)]">
       <p className="xl:text-5xl sm:text-4xl font-bold">Popular Courses</p>
       <aside className="xl:mt-20 sm:mt-10 flex flex-wrap justify-between">
-        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md">
           <Image src={imgg1} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -43,7 +43,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md mt-10">
           <Image src={imgg2} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -74,7 +74,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md mt-10">
           <Image src={imgg3} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -105,7 +105,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md mt-10">
           <Image src={imgg4} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -136,7 +136,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md mt-10">
           <Image src={imgg5} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -166,7 +166,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
+        <div className="bg-white sm:w-[100%] lg:w-[40%] rounded-md mt-10">
           <Image src={imgg6} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
