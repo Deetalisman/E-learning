@@ -1,22 +1,55 @@
+"use client";
 import img1 from "./logo.png";
 import img2 from "./hero.png";
 import Image from "next/image";
+import { useState } from "react";
 function Homepage() {
+  const [navbar, setnavbar] = useState(false);
   return (
-    <div className="bg-[rgb(30,27,75)] h-[100vh] px-[10%]  text-white">
-      <Menubar />
+    <div className="bg-[rgb(30,27,75)] relative h-[100vh] sm:px-[5%] lg:px-[7%] xl:px-[10%]  text-white">
+      <Menubar setnavbar={setnavbar} navbar={navbar} />
       <Mainhome />
+      <Navebar setnavbar={setnavbar} navbar={navbar} />
     </div>
   );
 }
 
 export default Homepage;
 
-function Menubar() {
+function Navebar({ setnavbar, navbar }) {
+  function handleclose() {
+    setnavbar(false);
+  }
+  return (
+    <div className={navbar ? "block" : "hidden"}>
+      <div className=" absolute left-0 top-0 h-[100vh] w-[100%] bg-[rgba(3,3,3,0.6)]">
+        <ul className=" relative h-[100vh] w-[60%] pl-10 bg-[rgb(49,46,129)]  pt-[30vh] text-[1.2rem] font-bold">
+          <li className="mr-6 mb-3">Home</li>
+          <li className="mr-6 mb-3">About</li>
+          <li className="mr-6 mb-3">Courses</li>
+          <li className="mr-6 mb-3">Testimonial</li>
+          <li className="mr-6 mb-3">Blog</li>
+          <li className="mr-6 mb-3">Contact</li>
+          <div
+            className="absolute cursor-pointer top-5 text-2xl right-10"
+            onClick={handleclose}
+          >
+            X
+          </div>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function Menubar({ setnavbar, navbar }) {
+  function handlenavbar() {
+    setnavbar(true);
+  }
   return (
     <div className="flex justify-between">
       <Image src={img1} alt="img1" className="mt-0" />
-      <ul className="flex justify-between mt-[2.8rem] text-xl font-bold">
+      <ul className="lg:flex sm:hidden justify-between  mt-[3.3rem] lg:text-[1rem] xl:text-[1.1rem] font-bold">
         <li className="mr-6">Home</li>
         <li className="mr-6">About</li>
         <li className="mr-6">Courses</li>
@@ -24,30 +57,37 @@ function Menubar() {
         <li className="mr-6">Blog</li>
         <li className="mr-6">Contact</li>
       </ul>
-      <button className="bg-[rgb(139,24,71)] mt-[2.8rem] h-10 px-12 rounded-md">
-        Signup Now
-      </button>
+      <div className="flex">
+        <button className="bg-[rgb(139,24,71)] lg:text-[1rem] sm:text-[0.7rem] mt-[2.8rem] sm:h-9 lg:h-10 sm:px-10 lg:px-12 rounded-md">
+          Signup Now
+        </button>
+        <aside onClick={handlenavbar} className="mt-14 cursor-pointer ml-6">
+          <div className="bg-white h-1 rounded-lg w-8 mb-1"></div>
+          <div className="bg-white  h-1 rounded-lg w-8 mb-1"></div>
+          <div className="bg-white float-right h-1 rounded-lg w-5"></div>
+        </aside>
+      </div>
     </div>
   );
 }
 
 function Mainhome() {
   return (
-    <div className="flex ">
-      <div className="mr-[7rem]">
-        <h1 className="text-6xl font-bold">
-          Best Online Platform for education
+    <div className="flex sm:mt-[10vh] lg:mt-5 justify-between">
+      <div className="mr-[2rem] sm:mr-[20%] lg:mr-0 ml-[2.2rem]">
+        <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-7">
+          Best Online Platform for education.
         </h1>
-        <p className="mt-3 mb-0">
+        <p className="mt-7 mb-0 text-[0.9rem] text-slate-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
           non! Tenetur omnis eum eos quisquam deleniti temporibus nam
           exercitationem
         </p>
         <div className="mt-0">
-          <button className="bg-[rgb(20,83,45)] mt-[3rem] h-12 px-12 rounded-md">
+          <button className="bg-[rgb(20,83,45)] text-[0.9rem] mt-[3rem] sm:h-10 lg:h-12 px-12 rounded-md">
             Signup Now
           </button>
-          <button className="bg-[rgb(161,98,7)] ml-5 mt-[3rem]  h-12 px-12 rounded-md">
+          <button className="bg-[rgb(161,98,7)] text-[0.9rem] ml-5 mt-[3rem]   sm:h-10 lg:h-12 px-12 rounded-md">
             Learn More
           </button>
         </div>
@@ -69,7 +109,7 @@ function Mainhome() {
           </div>
         </aside>
       </div>
-      <div className="mt-0">
+      <div className="mt-0 lg:block sm:hidden">
         <Image src={img2} alt="img1" className="w-[60rem] mt-0" />
       </div>
     </div>

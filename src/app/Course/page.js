@@ -10,10 +10,10 @@ import { FaFile } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 function Course() {
   return (
-    <div className="px-[10%] pt-16 pb-24 bg-[rgb(229,231,235)]">
-      <p className="text-5xl font-bold">Popular Courses</p>
-      <aside className="mt-20 flex flex-wrap justify-between">
-        <div className="bg-white w-[30%] rounded-md">
+    <div className="xl:px-[10%] lg:px-[9%] sm:px-[10%] xl:pt-16 sm:pt-10 pb-24 bg-[rgb(229,231,235)]">
+      <p className="xl:text-5xl sm:text-4xl font-bold">Popular Courses</p>
+      <aside className="xl:mt-20 sm:mt-10 flex flex-wrap justify-between">
+        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
           <Image src={imgg1} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -43,7 +43,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[30%] rounded-md">
+        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
           <Image src={imgg2} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -74,7 +74,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[30%] rounded-md">
+        <div className="bg-white w-[100%] rounded-md lg:mb-0 sm:mb-10">
           <Image src={imgg3} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -105,7 +105,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[30%] rounded-md mt-10">
+        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
           <Image src={imgg4} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -136,7 +136,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[30%] rounded-md mt-10">
+        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
           <Image src={imgg5} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
@@ -166,7 +166,7 @@ function Course() {
             </div>
           </article>
         </div>
-        <div className="bg-white w-[30%] rounded-md mt-10">
+        <div className="bg-white w-[100%] rounded-md mt-10 lg:mb-0 sm:mb-10">
           <Image src={imgg6} className="w-full rounded-t-md" />
           <article className="py-10 px-4">
             <p>
