@@ -47,9 +47,9 @@ function Menubar({ setnavbar, navbar }) {
     setnavbar(true);
   }
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between pr-5 sm:pr-0">
       <Image src={img1} alt="img1" className="mt-0" />
-      <ul className="lg:flex sm:hidden justify-between  mt-[3.3rem] lg:text-[1rem] xl:text-[1.1rem] font-bold">
+      <ul className="lg:flex hidden justify-between  mt-[3.3rem] lg:text-[1rem] xl:text-[1.1rem] font-bold">
         <li className="mr-6">Home</li>
         <li className="mr-6">About</li>
         <li className="mr-6">Courses</li>
@@ -58,10 +58,13 @@ function Menubar({ setnavbar, navbar }) {
         <li className="mr-6">Contact</li>
       </ul>
       <div className="flex">
-        <button className="bg-[rgb(139,24,71)] lg:text-[1rem] sm:text-[0.7rem] mt-[2.8rem] sm:h-9 lg:h-10 sm:px-10 lg:px-12 rounded-md">
+        <button className="bg-[rgb(139,24,71)] lg:text-[1rem] text-[0.8rem] mt-[2.8rem] h-9 lg:h-10 px-10 lg:px-12 rounded-md">
           Signup Now
         </button>
-        <aside onClick={handlenavbar} className="mt-14 cursor-pointer ml-6">
+        <aside
+          onClick={handlenavbar}
+          className="mt-14 cursor-pointer ml-3 sm:ml-6"
+        >
           <div className="bg-white h-1 rounded-lg w-8 mb-1"></div>
           <div className="bg-white  h-1 rounded-lg w-8 mb-1"></div>
           <div className="bg-white float-right h-1 rounded-lg w-5"></div>
@@ -73,9 +76,9 @@ function Menubar({ setnavbar, navbar }) {
 
 function Mainhome() {
   return (
-    <div className="flex sm:mt-[10vh] lg:mt-5 justify-between">
+    <div className="flex mt-[15vh] sm:mt-[30vh] lg:mt-5 justify-between">
       <div className="mr-[2rem] sm:mr-[20%] lg:mr-0 ml-[2.2rem]">
-        <h1 className="sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-7">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-7">
           Best Online Platform for education.
         </h1>
         <p className="mt-7 mb-0 text-[0.9rem] text-slate-300">
@@ -84,14 +87,14 @@ function Mainhome() {
           exercitationem
         </p>
         <div className="mt-0">
-          <button className="bg-[rgb(20,83,45)] text-[0.9rem] mt-[3rem] sm:h-10 lg:h-12 px-12 rounded-md">
+          <button className="bg-[rgb(20,83,45)] text-[0.9rem] mt-[3rem] h-10 lg:h-12 px-12 rounded-md">
             Signup Now
           </button>
-          <button className="bg-[rgb(161,98,7)] text-[0.9rem] ml-5 mt-[3rem]   sm:h-10 lg:h-12 px-12 rounded-md">
+          <button className="bg-[rgb(161,98,7)] text-[0.9rem] ml-5 mt-[3rem]  h-10 lg:h-12 px-12 rounded-md">
             Learn More
           </button>
         </div>
-        <aside className="mt-5 flex justify-between w-[80%]">
+        <aside className="sm:mt-5 mt-8 flex justify-between w-[60%] sm:w-[80%]">
           <div>
             <p className="text-2xl font-bold">260+</p>
             <nav className="w-28 mt-2 h-1 rounded-md bg-[rgb(20,83,45)]"></nav>
@@ -109,7 +112,7 @@ function Mainhome() {
           </div>
         </aside>
       </div>
-      <div className="mt-0 lg:block sm:hidden">
+      <div className="mt-0 lg:block hidden">
         <Image src={img2} alt="img1" className="w-[60rem] mt-0" />
       </div>
     </div>

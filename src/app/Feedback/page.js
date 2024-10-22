@@ -27,32 +27,32 @@ const responsive = {
 };
 function Feedback() {
   return (
-    <div className="xl:px-[10%] lg:px-[7%] sm:px-[9%] bg-black text-white xl:pt-24 sm:pt-14 sm:pb-20 xl:h-[100vh] lg:flex justify-between">
+    <div className="xl:px-[10%] lg:px-[7%] sm:px-[9%] px-[8%] bg-black text-white xl:pt-24 pt-14 pb-20 xl:h-[100vh] lg:flex justify-between">
       <aside className="xl:w-[30%] lg:w-[35%]">
         <div className="flex">
           <article className="bg-red-700 sm:w-10 lg:w-14 sm:h-10 lg:h-14 rounded-full p-3">
             <FaShoppingBag className="text-slate-100  lg:text-3xl" />
           </article>
-          <p className="text-xl sm:mt-2 lg:mt-4 ml-3 font-bold">
+          <p className="text-xl mt-2 sm:mt-2 lg:mt-4 ml-3 font-bold">
             Student Feedback
           </p>
         </div>
-        <h1 className="xl:text-[3rem] lg:text-[2.5rem] sm:text-[1.5rem] lg:leading-[3rem] xl:leading-[4rem] font-bold sm:mt-10 lg:mt-20 xl:mt-10">
+        <h1 className="xl:text-[3rem] lg:text-[2.5rem] sm:text-[1.5rem] text-2xl lg:leading-[3rem] xl:leading-[4rem] font-bold mt-10 lg:mt-20 xl:mt-10">
           Trusted by genius people.
         </h1>
-        <p className="lg:mt-8 sm:mt-4 text-slate-400 text-[0.9rem]">
+        <p className="lg:mt-8 mt-4 text-slate-400 text-[0.75rem] sm:text-[0.9rem]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
           non! Tenetur omnis eum eos quisquam deleniti temporibus nam
           exercitationem
         </p>
         <div className="mt-8 flex">
           <p className="xl:text-5xl lg:text-4xl sm:text-2xl font-bold">99%</p>
-          <p className="sm:ml-5 lg:ml-9 lg:mt-0 sm:mt-2 xl:text-sm sm:text-[0.8rem]">
+          <p className="ml-5 lg:ml-9 lg:mt-0 sm:mt-2 xl:text-sm text-[0.8rem]">
             Student Complete Course Successfully
           </p>
         </div>
       </aside>
-      <aside className="lg:w-[55%] lg xl:w-[60%] sm:mt-16 lg:mt-28 h-[19rem] p-5 rounded-md bg-white">
+      <aside className="lg:w-[55%] lg xl:w-[60%] mt-10 sm:mt-16 lg:mt-28 h-[35rem] sm:h-[19rem] p-5 rounded-md bg-white">
         <Carousel
           additionalTransform={0}
           arrows={true}
@@ -64,9 +64,9 @@ function Feedback() {
           itemClass="item"
           showDots={false}
         >
-          <div className="flex justify-between">
-            <Image src={r1} className="h-[17rem] w-60" />
-            <aside className="xl:ml-10 xl:mt-4 lg:mt-0 sm:ml-6">
+          <div className="sm:flex justify-between">
+            <Image src={r1} className="sm:h-[17rem] sm:w-60 w-full h-[19rem]" />
+            <aside className="xl:ml-10 xl:mt-4 mt-3 lg:mt-0 sm:ml-6">
               <div className="flex ">
                 <FaStar className="text-yellow-600 text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
@@ -74,21 +74,21 @@ function Feedback() {
                 <FaStar className="text-yellow-600  text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
               </div>
-              <p className="mt-4 text-slate-400 sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem]">
+              <p className="mt-4 text-slate-400 text-[0.75rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, non!etur omnis eum eos quisquam deleniti temporibus
                 nam exercitationem Tenetur omnis eum eos quisquam deleniti
                 temporibus nam exercitationem
               </p>
-              <p className="text-black font-bold sm:mt-9  lg:mt-6 xl:mt-10">
+              <p className="text-black font-bold sm:mt-9 mt-5 lg:mt-6 xl:mt-10">
                 Jasica Doe
               </p>
               <p className="text-slate-500">Web developer</p>
             </aside>
           </div>
-          <div className="flex justify-between">
-            <Image src={r2} className="h-[17rem] w-60" />
-            <aside className="xl:ml-10 xl:mt-4 lg:mt-0 sm:ml-6">
+          <div className="sm:flex justify-between">
+            <Image src={r2} className="sm:h-[17rem] h-[19rem] w-full sm:w-60" />
+            <aside className="xl:ml-10 xl:mt-4 lg:mt-0 mt-3 sm:ml-6">
               <div className="flex ">
                 <FaStar className="text-yellow-600 text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
@@ -96,21 +96,21 @@ function Feedback() {
                 <FaStar className="text-yellow-600  text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
               </div>
-              <p className="mt-4 text-slate-400 sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem]">
+              <p className="mt-4 text-slate-400 text-[0.75rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, non!etur omnis eum eos quisquam deleniti temporibus
                 nam exercitationem Tenetur omnis eum eos quisquam deleniti
                 temporibus nam exercitationem
               </p>
-              <p className="text-black font-bold sm:mt-9  lg:mt-6 xl:mt-10">
+              <p className="text-black font-bold sm:mt-9 mt-5  lg:mt-6 xl:mt-10">
                 Jonas Doe
               </p>
               <p className="text-slate-500">Mern developer</p>
             </aside>
           </div>
-          <div className="flex justify-between">
-            <Image src={r3} className="h-[17rem] w-60" />
-            <aside className="xl:ml-10 sm:ml-6 xl:mt-4 lg:mt-0">
+          <div className="sm:flex justify-between">
+            <Image src={r3} className="sm:h-[17rem] h-[19rem] sm:w-60 w-full" />
+            <aside className="xl:ml-10 sm:ml-6 xl:mt-4 mt-3 sm:mt-0">
               <div className="flex ">
                 <FaStar className="text-yellow-600 text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
@@ -118,13 +118,13 @@ function Feedback() {
                 <FaStar className="text-yellow-600  text-2xl" />
                 <FaStar className="text-yellow-600  text-2xl" />
               </div>
-              <p className="mt-4 text-slate-400 sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.9rem]">
+              <p className="mt-4 text-slate-400 sm:text-[0.9rem] text-[0.75rem] lg:text-[0.8rem] xl:text-[0.9rem]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, non!etur omnis eum eos quisquam deleniti temporibus
                 nam exercitationem Tenetur omnis eum eos quisquam deleniti
                 temporibus nam exercitationem
               </p>
-              <p className="text-black font-bold sm:mt-9 lg:mt-6 xl:mt-10">
+              <p className="text-black font-bold sm:mt-9 lg:mt-6 mt-5 xl:mt-10">
                 John Doe
               </p>
               <p className="text-slate-500">Next Js developer</p>
